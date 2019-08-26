@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#03A9F4"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <TextView
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Share to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/application_import" />
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Share to device" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="abcdef" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/driver"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/driver" />
+
+        <ImageView
+            android:paddingLeft="5dp"
+            android:scaleType="fitXY"
+            android:id="@+id/bluetooth"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/driver"
+            android:src="@drawable/bluetoth" />
+
+        <ImageView
+            android:paddingLeft="5dp"
+            android:scaleType="fitXY"
+            android:id="@+id/email"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/bluetooth"
+            android:src="@drawable/email" />
+
+        <ImageView
+            android:paddingTop="5dp"
+            android:id="@+id/gmail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/driver"
+            android:src="@drawable/gmail" />
+
+        <ImageView
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:scaleType="fitXY"
+            android:id="@+id/messager"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/bluetooth"
+            android:layout_toRightOf="@id/gmail"
+            android:src="@drawable/mess" />
+
+        <ImageView
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:scaleType="fitXY"
+            android:id="@+id/ondrive"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/email"
+            android:layout_toRightOf="@id/messager"
+            android:src="@drawable/ondrive" />
+    </RelativeLayout>
+</LinearLayout>
